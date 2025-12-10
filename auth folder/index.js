@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 const menuIcon = document.querySelector(".menu-icon");
 const dropdown = document.querySelector(".dropdown");
 

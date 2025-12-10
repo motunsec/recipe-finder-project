@@ -22,13 +22,11 @@
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
     if (!currentUser) {
-        // Not logged in → go to login page
         window.location.href = "./login.html";
     } else {
-        // Show username
         document.getElementById("profileUsername").textContent = currentUser.username;
 
-        // Show profile picture if it exists
+       
         if (currentUser.profilePic) {
             const img = document.getElementById("profileImage");
             img.src = currentUser.profilePic;
