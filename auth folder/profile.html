@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Your profile</h2>
+   <div class="profile-box">
+    <img id="profileImage" style="display:none;" alt="Profile Picture">
+    <h2>Welcome, <span id="profileUsername"></span>!</h2>
+</div>
+
+<button id="logoutBtn">Log Out</button>
+<a href="./index.html"><button>Back</button></a>
+
+<script src="./auth.js"></script>
+    <script>
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (!currentUser) {
+        // Not logged in → go to login page
+        window.location.href = "./login.html";
+    } else {
+        // Show username
+        document.getElementById("profileUsername").textContent = currentUser.username;
+
+        // Show profile picture if it exists
+        if (currentUser.profilePic) {
+            const img = document.getElementById("profileImage");
+            img.src = currentUser.profilePic;
+            img.style.display = "block";
+        }
+    }
+</script>
+</body>
+
+</html>

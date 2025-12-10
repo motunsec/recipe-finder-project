@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./signup.css">
+  <link href="https://fonts.cdnfonts.com/css/varuna" rel="stylesheet">
+
+  <title>Sign up</title>
+</head>
+
+<body>
+
+  <h2>Create Your Account</h2>
+  <form id="signupForm">
+    <div class="signup-form">
+      <input type="text" id="signupUsername" placeholder="Username" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <!-- <label for="signupImage" class="custom-file-btn">Choose Image</label> -->
+      <input type="file" id="signupImage" accept="image/*">
+      <img id="imagePreview" style="display:none; max-width:300px; margin-top:10px;" alt="Preview">
+      <button type="submit" class="signup">Sign Up</button>
+    </div>
+    <p id="signupMessage" style="display:none;"></p>
+  </form>
+  <h3 class="goto-login">Already have an account?,</h3><a href="./login.html" class="login"> Log in</a>
+  <script src="./auth.js"></script>
+  <a href="./index.html" class="go-back">Back</a>
+
+</body>
+
+</html>

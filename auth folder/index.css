@@ -43,6 +43,7 @@ h1{
 .left-side{
     display: flex;
     align-items: center;
+    flex-direction: row;
     /* gap: 5em; */
     margin-right: 30px;
 }
@@ -71,6 +72,25 @@ h1{
   cursor: pointer;
   color: white; 
 }
+#logoutBtn {
+  display: block;
+  border: none;
+  background: none;
+  padding: 10px;
+  color: white;
+  font-family: 'Times New Romance', sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  
+  margin-left: 200px;
+}
+#logoutBtn:hover {
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: white;
+  color: #ff6f61;
+}
+
 .dropdown {
   position: absolute;
   top: 25px;
