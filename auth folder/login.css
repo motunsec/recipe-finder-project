@@ -72,3 +72,15 @@ input{
     border-radius: 10px;
     transition: 0.3s ;
 }
+.inputbox{
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+#togglePassword{
+    top: 15px;
+    right: 35px;
+    color: white;
+    cursor: pointer;
+}

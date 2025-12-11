@@ -105,3 +105,98 @@ h2{
 }
 
 
+@media screen and (max-width: 1024px) {
+  .profile-body {
+    padding: 30px;
+  }
+}
+/* Mobile Screens (Max width 768px) */
+@media screen and (max-width: 768px) {
+  .profile-body h1 {
+    font-size: 30px;
+  }
+  .profile-body .profile-box {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-body h2 {
+    font-size: 20px;
+  }
+}
+/* Small Mobile Screens (Max width 480px) */
+@media screen and (max-width: 480px) {
+  .profile-body h1 {
+    font-size: 26px;
+  }
+  .profile-body .profile-box {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-body #editPhotoBtn {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Very Small Mobile Screens (Max width 343px) */
+@media screen and (max-width: 343px) {
+  .profile-body {
+    padding: 20px 10px;
+  }
+  .profile-body h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .profile-body h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-body #logoutBtn {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Modal adjustments */
+  .modal-content {
+    padding: 15px;
+  }
+  
+  #cropImage {
+    max-height: 200px;
+  }
+}
+/* Tiny Mobile Screens (Max width 257px) */
+@media screen and (max-width: 257px) {
+  .profile-body {
+    padding: 10px 5px;
+  }
+  .profile-body h1 {
+    font-size: 18px;
+  }
+  .profile-body .profile-box {
+    width: 80px;
+    height: 80px;
+  }
+  .profile-body h2 {
+    font-size: 16px;
+  }
+  .profile-body #logoutBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  .profile-body .backBtn {
+    font-size: 14px;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+  }
+  
+  .modal-buttons button {
+    width: 100%;
+  }
+}

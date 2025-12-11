@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.cdnfonts.com/css/varuna" rel="stylesheet">
 
   <title>Sign up Page</title>
@@ -17,7 +18,7 @@
     <div class="signup-form">
       <input type="text" id="signupUsername" placeholder="Username" required>
       <input type="password" id="signupPassword" placeholder="Password" required>
-      <!-- <label for="signupImage" class="custom-file-btn">Choose Image</label> -->
+      <i id="togglePassword" class="fa-solid fa-eye" style="cursor:pointer;"></i>
       <input type="file" id="signupImage" accept="image/*">
       <img id="imagePreview" style="display:none; max-width:300px; margin-top:10px;" alt="Preview">
       <button type="submit" class="signup">Sign Up</button>
@@ -28,6 +29,17 @@
   <script src="./auth.js"></script>
   <a href="./index.html" class="go-back">Back</a>
 
+  <script>
+    const passwordInput = document.getElementById("signupPassword");
+    const togglePassword = document.getElementById("togglePassword");
+
+    togglePassword.addEventListener("click", () => {
+      const type = passwordInput.type === "password" ? "text" : "password";
+      passwordInput.type = type;
+      togglePassword.classList.toggle("fa-eye");
+      togglePassword.classList.toggle("fa-eye-slash");
+    });
+  </script>
 </body>
 
 </html>

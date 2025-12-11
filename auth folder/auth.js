@@ -121,11 +121,11 @@ const imageInput = document.getElementById("signupImage");
 const imagePreview = document.getElementById("imagePreview");
 
 if (imageInput) {
-  imageInput.addEventListener("change", function() {
+  imageInput.addEventListener("change", function () {
     const file = this.files[0];
     if (file) {
       const reader = new FileReader();
-      reader.onload = function(e) {
+      reader.onload = function (e) {
         imagePreview.src = e.target.result;
         imagePreview.style.display = "block";
       }
@@ -140,7 +140,8 @@ if (imageInput) {
 const fileInput = document.getElementById("signupImage");
 const fileName = document.getElementById("fileName");
 
-fileInput.addEventListener("change", function() {
+fileInput.addEventListener("change", function () {
   fileName.textContent = this.files[0] ? this.files[0].name : "No file chosen";
 });
+
 
