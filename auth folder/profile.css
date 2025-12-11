@@ -124,7 +124,6 @@ h2{
     font-size: 20px;
   }
 }
-/* Small Mobile Screens (Max width 480px) */
 @media screen and (max-width: 480px) {
   .profile-body h1 {
     font-size: 26px;
@@ -139,7 +138,7 @@ h2{
     height: 30px;
   }
 }
-/* Very Small Mobile Screens (Max width 343px) */
+
 @media screen and (max-width: 343px) {
   .profile-body {
     padding: 20px 10px;
@@ -168,7 +167,7 @@ h2{
     max-height: 200px;
   }
 }
-/* Tiny Mobile Screens (Max width 257px) */
+
 @media screen and (max-width: 257px) {
   .profile-body {
     padding: 10px 5px;
