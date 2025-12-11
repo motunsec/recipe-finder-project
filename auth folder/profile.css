@@ -3,3 +3,105 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #FF6F61;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+}
+h1{
+    font-family: 'VARUNA', sans-serif;
+    color: #ffe8c7;
+    font-size: 55px;
+}
+#profileImage {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+.profile-box{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-left: 50px;
+    align-items: center;
+}
+#editPhotoBtn{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #ffe8c7;
+    font-size: 20px;
+    cursor: pointer;
+}
+h3{
+    font-family: 'VARUNA', sans-serif;
+    color: #333;
+    font-size: 33px;
+}
+#saveCrop{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: #ccc;
+    color: #333;
+    font-family: 'VARUNA', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+#cancelCrop{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: #ccc;
+    color: #333;
+    font-family: 'VARUNA', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+h2{
+    font-family: 'VARUNA', sans-serif;
+    color: #ffe8c7;
+    font-size: 45px;
+}
+#logoutBtn{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    color: #ffe8c7;
+    font-family: 'VARUNA', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}   
+#logoutBtn:hover{
+    background: white;
+    color: #ff6f61;
+    transition: 0.3s ease;
+}
+.backBtn{
+    font-family: 'VARUNA', sans-serif;
+    color: #ffe8c7;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.backBtn:hover{
+    color: #ff6f61;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s ;
+}
+
+
