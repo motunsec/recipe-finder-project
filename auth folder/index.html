@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/varuna" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/times-new-romance" rel="stylesheet">
 
     <title>Document</title>
@@ -38,7 +39,7 @@
 
                 <div class="dropdown">
                     <a href="./profile.html" class="dropdown-item">Profile</a>
-                    <a href="" class="dropdown-item">Bookmarks</a>
+                    <a href="./bookmark.html" class="dropdown-item">Bookmarks</a>
                 </div>
             </div>
         </nav>
@@ -54,6 +55,13 @@
         </div>
         <h2>Search for any recipe of your choice! <button id="logoutBtn">Log out</button> </h2>
     </section>
+    <section id="recipes-section">
+        <div id="recipes-container"></div>
+    </section>
+       <section id="hero-recent">
+            <h3>Recent Searches:</h3>
+            <ul id="recent-list"></ul>
+        </section>
     <script src="./index.js"></script>
     <script src="./auth.js"></script>
 </body>
