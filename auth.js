@@ -117,31 +117,53 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// const imageInput = document.getElementById("signupImage");
+// const imagePreview = document.getElementById("imagePreview");
+
+// if (imageInput) {
+//   imageInput.addEventListener("change", function () {
+//     const file = this.files[0];
+//     if (file) {
+//       const reader = new FileReader();
+//       reader.onload = function (e) {
+//         imagePreview.src = e.target.result;
+//         imagePreview.style.display = "block";
+//       }
+//       reader.readAsDataURL(file);
+//     } else {
+//       imagePreview.src = "";
+//       imagePreview.style.display = "none";
+//     }
+//   });
+// }
+
+// const fileInput = document.getElementById("signupImage");
+// const fileName = document.getElementById("fileName");
+
+// fileInput.addEventListener("change", function () {
+//   fileName.textContent = this.files[0] ? this.files[0].name : "No file chosen";
+// });
+
 const imageInput = document.getElementById("signupImage");
 const imagePreview = document.getElementById("imagePreview");
+const fileName = document.getElementById("fileName"); 
 
 if (imageInput) {
+  imageInput.addEventListener("click", (e) => e.stopPropagation());
+
   imageInput.addEventListener("change", function () {
     const file = this.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        imagePreview.src = e.target.result;
-        imagePreview.style.display = "block";
-      }
-      reader.readAsDataURL(file);
-    } else {
-      imagePreview.src = "";
-      imagePreview.style.display = "none";
-    }
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      imagePreview.src = e.target.result;
+      imagePreview.style.display = "block";
+
+      if (fileName) fileName.textContent = file.name;
+    };
+    reader.readAsDataURL(file);
   });
 }
-
-const fileInput = document.getElementById("signupImage");
-const fileName = document.getElementById("fileName");
-
-fileInput.addEventListener("change", function () {
-  fileName.textContent = this.files[0] ? this.files[0].name : "No file chosen";
-});
 
 

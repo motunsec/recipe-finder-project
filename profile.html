@@ -69,11 +69,36 @@
             if (currentUser.profilePic) {
                 profileImg.src = currentUser.profilePic;
                 profileImg.style.display = "block";
-            }         
+            }
             editBtn.addEventListener("click", () => editInput.click());
+
+            // editInput.addEventListener("change", function () {
+            //     const file = this.files[0];
+            //     if (!file) return;
+            //     const reader = new FileReader();
+            //     reader.onload = function (e) {
+            //         cropImage.src = e.target.result;
+            //         cropModal.style.display = "flex";
+
+            //         if (cropper) cropper.destroy();
+
+            //         cropper = new Cropper(cropImage, {
+            //             aspectRatio: 1,
+            //             viewMode: 1,
+            //             zoomable: true,
+            //             scalable: true,
+            //             movable: true,
+            //         });
+            //     };
+            //     reader.readAsDataURL(file);
+            // });
+
+            editInput.addEventListener("click", (e) => e.stopPropagation()); // prevents mobile exit
+
             editInput.addEventListener("change", function () {
                 const file = this.files[0];
                 if (!file) return;
+
                 const reader = new FileReader();
                 reader.onload = function (e) {
                     cropImage.src = e.target.result;
@@ -91,6 +116,9 @@
                 };
                 reader.readAsDataURL(file);
             });
+
+
+
             saveCrop.addEventListener("click", () => {
                 const canvas = cropper.getCroppedCanvas({ width: 300, height: 300 });
                 const croppedImage = canvas.toDataURL("image/png");
