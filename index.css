@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 header {
   width: 100%;
   height: 80px;
@@ -502,6 +508,7 @@ nav {
     height: auto;
   }
 }
+
 @media screen and (max-width: 420px) {
   .hero-images {
     gap: 2em;
@@ -517,6 +524,7 @@ nav {
     height: auto;
   }
 }
+
 #recipes-container {
   display: flex;
   flex-wrap: wrap;

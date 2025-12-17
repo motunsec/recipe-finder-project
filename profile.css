@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html,
 body {
   background-color: #FF6F61;
   height: 100vh;
@@ -13,7 +13,6 @@ body {
   gap: 2em;
   align-items: center;
 }
-
 h1 {
   font-family: 'VARUNA', sans-serif;
   color: #ffe8c7;

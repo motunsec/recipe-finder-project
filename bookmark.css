@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .bookmarks-hero {
     text-align: center;
     padding: 2em 1em;
@@ -21,9 +25,6 @@
     display: flex;
     justify-content: center;
 }
-
-
-
 #bookmarks-container {
     display: flex;
     flex-wrap: wrap;
