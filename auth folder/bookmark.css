@@ -100,3 +100,121 @@
     color: #ff6f61;
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 900px) {
+   
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .right-side h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .left-side a {
+        font-size: 20px;
+    }
+
+    .bookmarks-hero h2 {
+        font-size: 32px;
+    }
+
+   
+    #bookmarks-container {
+        gap: 1.5em;
+    }
+
+    .recipe-card {
+        width: 250px;
+    }
+
+    .recipe-card img {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .right-side h1 {
+        font-size: 20px;
+        padding: 0 10px;
+        word-wrap: break-word;
+    }
+
+    .left-side a {
+        font-size: 18px;
+    }
+
+    .bookmarks-hero h2 {
+        font-size: 28px;
+    }
+
+    .recipe-card {
+        width: 90%;
+        max-width: 330px;
+    }
+
+    .recipe-card img {
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    nav {
+        gap: 5px;
+    }
+
+    .right-side h1 {
+        font-size: 17px;
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    .left-side {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .left-side a {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .bookmarks-hero h2 {
+        font-size: 24px;
+    }
+
+    .recipe-card {
+        width: 95%;
+    }
+
+    .recipe-card img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .right-side h1 {
+        font-size: 15px;
+    }
+
+    .left-side a {
+        font-size: 14px;
+    }
+
+    .bookmarks-hero h2 {
+        font-size: 20px;
+    }
+
+    .recipe-card img {
+        height: 130px;
+    }
+}

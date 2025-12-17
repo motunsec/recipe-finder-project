@@ -135,6 +135,7 @@ async function performSearch(query) {
                 <h4>Instructions:</h4>
                 <p>${meal.strInstructions}</p>
                 <button class="bookmark-btn"><i class="fa-regular fa-bookmark"></i>Bookmark</button>
+                  <button class="remove-card-btn"><i class="fa-solid fa-x"></i>Remove</button>
             `;
 
 
@@ -156,6 +157,12 @@ async function performSearch(query) {
         } else {
           alert("Recipe already bookmarked!");
         }
+      });
+
+
+      const removeBtn = card.querySelector(".remove-card-btn");
+      removeBtn.addEventListener("click", () => {
+        card.remove();
       });
 
       recipesContainer.appendChild(card);
